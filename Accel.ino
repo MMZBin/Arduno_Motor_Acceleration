@@ -64,7 +64,7 @@ void loop() {
     analogWrite(MOTOR_A, currentSpeed);
 }
 
-inline void led(bool slow, bool middle, bool fast) {
+inline void led(const bool slow, const bool middle, const bool fast) {
     digitalWrite(LED_SLOW, slow);
     digitalWrite(LED_MIDDLE, middle);
     digitalWrite(LED_FAST, fast);
