@@ -21,7 +21,7 @@ bool Timer::isRunning() const { return isRunning_; }
 
 bool Timer::hasOccurred() {
     if (!isRunning_) { return false; }
-    bool hasOccurred = timer_() - startTime_ >= interval_;
+    bool hasOccurred = timer_() - startTime_ > interval_;
     if (hasOccurred) { isRunning_ = false; }
     return hasOccurred;
 }
