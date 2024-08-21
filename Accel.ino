@@ -10,20 +10,20 @@ const uint8_t ACCELERATION = 5;
 
 const uint8_t MOTOR_A = 3;
 const uint8_t MOTOR_B = 5;
-const uint8_t ENABLE = 6;
+const uint8_t ENABLE =  6;
 
-const uint8_t LED_SLOW = 8;
+const uint8_t LED_SLOW =   8;
 const uint8_t LED_MIDDLE = 9;
-const uint8_t LED_FAST = 10;
+const uint8_t LED_FAST =  10;
 
 void setup() {
     pinMode(MOTOR_A, OUTPUT);
     pinMode(MOTOR_B, OUTPUT);
-    pinMode(ENABLE, OUTPUT);
+    pinMode(ENABLE,  OUTPUT);
 
-    pinMode(LED_SLOW, OUTPUT);
+    pinMode(LED_SLOW,   OUTPUT);
     pinMode(LED_MIDDLE, OUTPUT);
-    pinMode(LED_FAST, OUTPUT);
+    pinMode(LED_FAST,   OUTPUT);
 
     timer.setInterval(150);
     joy.calibrate();
