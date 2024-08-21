@@ -1,3 +1,5 @@
+/* MOTOR_Bピンの操作(逆転)は実装されていません。 */
+
 #include "Timer.h"
 #include <Joystick.h>
 
